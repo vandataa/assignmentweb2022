@@ -7,7 +7,8 @@ module.exports = defineConfig({
             input: {
                 main: resolve(__dirname, 'index.html'),
                 work: resolve(__dirname, 'work.html'),
-                detail: resolve(__dirname, 'detail.html')
+                detail: resolve(__dirname, 'detail.html'),
+                work1: resolve(__dirname, 'work1.html'),
             }
         }
     }
