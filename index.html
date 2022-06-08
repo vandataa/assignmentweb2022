@@ -12,12 +12,23 @@
 
 <body>
   <div class="max-w-6xl mx-auto">
-    <div class="max-w-4xl mx-auto md:hidden">
-      <ul class="justify-end flex  py-2">
-        <li class="font-sans text-xl font-medium"><a href="">Work </a></li>
-        <li class="px-3 font-sans text-xl font-medium"><a href="">Blog </a></li>
-        <li class="font-sans text-xl font-medium"><a href="">Contact</a></li>
-      </ul>
+    <div class="max-w-4xl mx-auto">
+      <div class="flex justify-end ">
+        <button id="button" class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-justify"
+            viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+      <div class="md:flex justify-end">
+        <ul id="menu" class="hidden md:flex md:space-x-4">
+          <li class="font-sans text-xl font-medium"><a href="">Work </a></li>
+          <li class="px-3 font-sans text-xl font-medium"><a href="">Blog </a></li>
+          <li class="font-sans text-xl font-medium"><a href="">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <div class="max-w-4xl mx-auto py-23 pt-32 pb-20">
       <div class="grid md:grid-cols-3 gap-8">
@@ -65,7 +76,7 @@
     </div>
     <div class="max-w-4xl mx-auto pt-3">
       <h3 class="font-sans font-normal text-xl py-5">Featured works</h3>
-      <div class="grid md:grid-cols-3 gap3 grid-cols-1">
+      <div class="grid md:grid-cols-3 gap3 grid-cols-1 border-b py-4">
         <div class="cols-span-1 mx-auto">
           <img src="./src/img/Rectangle 30.jpg" class="rounded-2 md:full" alt="">
         </div>
@@ -78,7 +89,7 @@
             amet.</span>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 gap3 grid-cols-1 py-3">
+      <div class="grid md:grid-cols-3 gap3 grid-cols-1 border-b py-4">
         <div class="cols-span-1 mx-auto">
           <img src="./src/img/Rectangle 32.jpg" class="rounded-2" alt="">
         </div>
@@ -91,7 +102,7 @@
             amet.</span>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 gap3 grid-cols-1 border-b py-4 sm:hidden">
+      <div class="grid md:grid-cols-3 gap3 grid-cols-1 border-b py-4 ">
         <div class="cols-span-1 mx-auto">
           <img src="./src/img/Rectangle 34.jpg" class="rounded-2" alt="">
         </div>
@@ -105,8 +116,7 @@
         </div>
       </div>
     </div>
-    <br>
-    <hr>
+
     <div class="max-w-4xl px mx-auto pt-3">
       <div class="justify-center pt-16 flex ">
         <img src="./src/img/fb.png" class="px-4" alt="">
@@ -119,6 +129,14 @@
       </div>
     </div>
   </div>
+  <script>
+    const menu = document.getElementById("menu");
+      const button = document.getElementById("button");
+
+      button.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+  </script>
 </body>
 
 </html>
