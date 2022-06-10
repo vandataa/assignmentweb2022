@@ -22,7 +22,7 @@
                 </button>
             </div>
             <div class="md:flex justify-end p-3">
-                <ul id="menu" class="hidden md:flex md:space-x-4">
+                <ul id="menu" class="hidden flex md:space-x-4 text-center">
                     <li class="font-sans text-xl font-medium"><a href="">Work </a></li>
                     <li class="px-3 font-sans text-xl font-medium"><a href="">Blog </a></li>
                     <li class="font-sans text-xl font-medium"><a href="">Contact</a></li>
@@ -83,7 +83,7 @@
             </div>
             <div class="grid md:grid-cols-3 gap3 grid-cols-1 py-5">
                 <div class="cols-span-1 mx-auto">
-                    <img src="./src/img/Rectangle 40.png" class="rounded-2" alt="">
+                    <img src="https://res.cloudinary.com/datcoming/image/upload/v1654668559/Baitap/Rectangle_40_mtnlgw.png" class="rounded-2" alt="">
                 </div>
                 <div class="col-span-2 px-3">
                     <span class="font-bold text-3xl leading-10"><a href="">Components</a></span><br>
@@ -102,15 +102,23 @@
     </div>
     <div class="max-w-4xl px mx-auto pt-3">
         <div class="justify-center pt-16 flex ">
-            <img src="./src/img/fb.png" class="px-4" alt="">
-            <img src="./src/img/insta.png" class="px-4" alt="">
-            <img src="./src/img/Linkedin.png" class="px-4" alt="">
-            <img src="./src/img/Vector.png" class="px-4" alt="">
+          <img src="https://res.cloudinary.com/datcoming/image/upload/v1654668558/Baitap/fb_yacm04.png" class="px-4" alt="">
+          <img src="https://res.cloudinary.com/datcoming/image/upload/v1654668558/Baitap/insta_jtvd9l.png" class="px-4" alt="">
+          <img src="https://res.cloudinary.com/datcoming/image/upload/v1654668558/Baitap/Linkedin_lzeogu.png" class="px-4" alt="">
+          <img src="https://res.cloudinary.com/datcoming/image/upload/v1654668559/Baitap/Vector_xcdwuj.png" class="px-4" alt="">
         </div>
         <div class="text-center py-4 pb-16">
-            Copyright ©2020 All rights reserved
+          Copyright ©2020 All rights reserved
         </div>
-    </div>
+      </div>
+      <script>
+        const menu = document.getElementById("menu");
+        const button = document.getElementById("button");
+    
+        button.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+        });
+      </script>
 </body>
 
 </html>
