@@ -11,13 +11,24 @@
 
 <body>
     <div class="max-w-6xl mx-auto">
-        <div class="max-w-4xl mx-auto">
-            <ul class="justify-end flex  py-2 pr-36">
+        <div class="max-w-4xl mx-auto pt-6">
+            <div class="flex justify-end ">
+              <button id="button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-justify"
+                  viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </button>
+            </div>
+            <div class="md:flex justify-end p-3">
+              <ul id="menu" class="hidden md:flex md:space-x-4">
                 <li class="font-sans text-xl font-medium"><a href="./work.html">Work </a></li>
-                <li class="px-3 font-sans text-xl font-medium text-[red]"><a href="./detail.html">Blog </a></li>
+                <li class="px-3 font-sans text-xl font-medium"><a href="./detail.html">Blog </a></li>
                 <li class="font-sans text-xl font-medium"><a href="index.html">Contact</a></li>
-            </ul>
-        </div>
+              </ul>
+            </div>
+          </div>
         <div class="max-w-4xl mx-auto lg:w-6/12 p-4 pr-28 pt-14">
             <h1 class="font-bold text-2xl leading-9 " >Blog</h1>
             <div class="cols1 bg-white py-4 ">
@@ -88,6 +99,14 @@
               </div>
         </div>
     </div>
+    <script>
+        const menu = document.getElementById("menu");
+        const button = document.getElementById("button");
+    
+        button.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+        });
+      </script>
 </body>
 
 </html>
